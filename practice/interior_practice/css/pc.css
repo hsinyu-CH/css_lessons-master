@@ -1,0 +1,31 @@
+/* 電腦 */
+@media screen and (min-width:835px) {
+
+    .banner {
+        height: 750px;
+        background: url('../images/Banner.jpg') no-repeat;
+        background-size: cover;
+        border-bottom-left-radius: 360px;
+        padding: 66px 100px;
+    }
+
+    .banner .container {
+        width: 40%;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .article-item:hover {
+        background-color: #E7E7E7;
+    }
+
+    .read:hover {
+        background-color: #cfbba6;
+    }
+
+    .article-item {
+        width: 32%;
+    }
+}

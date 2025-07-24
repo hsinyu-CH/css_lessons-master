@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 手機 */
+        /* @media screen and (max-width: 500px) {
+            header {
+                flex-wrap: wrap;
+            }
+
+            .container {
+                flex-direction: column;
+
+            }
+
+            nav,
+            nav ul,
+            nav li,
+            nav a,
+            {
+            width: 100%
+        }
+
+        nav ul {
+            flex-wrap: wrap;
+        }
+        } */
+
+
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid gray;
+        }
+
+        .logo {
+            display: flex;
+            height: 70px;
+            margin-left: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        nav {
+            width: 500px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+        }
+
+        nav ul li {
+            display: flex;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        nav a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            align-items: center;
+            font-size: 20px;
+            text-decoration: none;
+            color: #333;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+
+        #News {
+
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        h2 {
+            margin: 20px 0;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .container1 {
+            width: 50%;
+            /* height: 200px; */
+            padding: 3rem 0;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .container2 {
+            padding: 3rem 0;
+
+            display: flex;
+
+            justify-content: center;
+        }
+
+        .date {
+
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        .news-item {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            line-height: 50px;
+            border-bottom: 1px dashed #333;
+
+        }
+
+        #Product {
+
+            background-color: rgb(255, 255, 255);
+        }
+
+        .item {
+            margin: 0 1rem;
+        }
+
+        .item p {
+            color: aliceblue;
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .item:nth-child(1) {
+            background-color: rgb(19, 98, 233);
+        }
+
+        .item:nth-child(2) {
+            background-color: tomato;
+        }
+
+        .item:nth-child(3) {
+            background-color: lightseagreen;
+        }
+
+        .item img {
+            width: 280px;
+            margin: 10px;
+        }
+
+
+
+        section {
+            padding-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            line-height: 50px;
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="imgs/logo.png" alt="sweet house"></div>
+        <nav>
+            <ul>
+                <li><a href="#">最新消息</a></li>
+                <li><a href="#">產品介紹</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="clear-both"></div> -->
+    </header>
+    <section id="News">
+        <h2>最新消息</h2>
+        <div class="container1">
+            <a class="news-item">
+                <div class="date">2023-06-23</div>
+                <div class="title">新品上市，優惠7折</div>
+            </a>
+            <a class="news-item">
+                <div class="date">2023-05-30</div>
+                <div class="title">預訂生日蛋糕送好禮</div>
+            </a>
+            <a class="news-item">
+                <div class="date">2023-05-01</div>
+                <div class="title">母親節蛋糕特惠中</div>
+            </a>
+        </div>
+    </section>
+    <section id="Product">
+        <h2>產品分類</h2>
+        <div class="container2">
+            <div class="item">
+                <img src="imgs/cake-cover.jpg" alt="蛋糕">
+                <p>蛋糕</p>
+            </div>
+            <div class="item">
+                <img src="imgs/bread.jpg" alt="麵包">
+                <p>麵包</p>
+            </div>
+            <div class="item">
+                <img src="imgs/dessert.jpg" alt="甜點">
+                <p>甜點</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>Copyright &copy; 2023</footer>
+</body>
+
+</html>

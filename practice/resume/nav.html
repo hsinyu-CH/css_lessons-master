@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD主導覽練習檔</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mukta:wght@300&display=swap');
+
+        /* font-family: 'Mukta', sans-serif; 
+            font-family: 'Dosis';
+        */
+        /* 電腦與平板上應用的樣式 */
+        body {
+            background-color: rgb(237, 237, 237);
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        /* 手機 */
+        @media screen and (max-width: 500px) {
+            .menu {
+                display: block;
+            }
+
+            header {
+                flex-wrap: wrap;
+            }
+
+            .navbar,
+            .menu-item,
+            .menu-item li,
+            .menu-item li a {
+                width: 100%;
+            }
+
+            .menu-item {
+                flex-direction: column;
+            }
+
+            .menu-item li {
+                height: 50px;
+            }
+        }
+
+        /* menu */
+        .menu {
+            width: 3rem;
+            height: 3rem;
+            background-color: rgb(255, 202, 123);
+            border: 1rem solid rgb(160, 193, 255);
+            position: relative;
+            display: none;
+        }
+
+        .menu::after {
+            content: "";
+            width: 2rem;
+            height: 0.2rem;
+            top: calc((100% - 1rem) / 2);
+            left: calc((100% - 2rem) / 2);
+            position: absolute;
+            border-top: 0.6rem double rgb(189, 77, 43);
+            border-bottom: 0.2rem solid rgb(189, 77, 43);
+        }
+
+        /* ---------menu end-------- */
+        header {
+            background-color: khaki;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+
+
+        .logo {
+            background-color: cornflowerblue;
+            width: 100px;
+            padding: 15px;
+            font-family: 'Mukta', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            color: rgb(104, 12, 12);
+        }
+
+        .menu-item {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+
+        }
+
+        .menu-item li {
+            display: flex;
+            height: 100%;
+            align-items: stretch;
+
+
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Mukta', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            color: black;
+            background-color: rgb(212, 59, 59);
+
+        }
+
+        .menu-item li a:hover {
+            background-color: coral;
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            LOGO
+        </div>
+        <div class="menu">
+        </div>
+        <nav class="navbar">
+            <ul class="menu-item">
+                <li><a href="">About</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+/* 平板 */
+@media screen and (min-width:481px) {
+
+    .banner {
+        height: 400px;
+        background: url('../images/tablet/Banner.png') no-repeat;
+        background-size: cover;
+        justify-content: flex-start;
+        background-position: right bottom;
+        border-bottom-left-radius: 150px;
+    }
+
+    .banner .container {
+        width: 60%;
+        margin-left: 40px;
+        background-color: transparent;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .article-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .article-item {
+        width: 48%;
+    }
+
+    .sub-title {
+        width: 60%;
+    }
+}

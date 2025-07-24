@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        .menu {
+            width: 3rem;
+            height: 3rem;
+            background-color: rgb(255, 202, 123);
+            border: 1rem solid rgb(160, 193, 255);
+            position: absolute;
+            top: 100px;
+            left: calc((100% - 3rem) / 2)
+        }
+
+        .menu::after {
+            content: "";
+            width: 2rem;
+            height: 0.2rem;
+            top: calc((100% - 1rem) / 2);
+            left: calc((100% - 2rem) / 2);
+            position: absolute;
+            border-top: 0.6rem double rgb(189, 77, 43);
+            border-bottom: 0.2rem solid rgb(189, 77, 43);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+    </div>
+</body>
+
+</html>

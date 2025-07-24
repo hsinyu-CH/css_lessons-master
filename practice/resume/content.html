@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #about,
+        .photos,
+        .skills {
+            padding: 50px 0;
+        }
+
+        .container {
+            width: 80%;
+            max-height: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .my-photo,
+        .description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .my-photo {
+            width: 48%;
+            height: 500px;
+            background-color: rgb(84, 123, 230);
+        }
+
+        .description {
+            width: 48%;
+            height: 500px;
+            background-color: darksalmon;
+        }
+
+        /* skill */
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-list,
+        .photo-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill {
+            width: 31%;
+            height: 200px;
+            background-color: rgb(155, 252, 98);
+        }
+
+        .photo-list {
+            flex-wrap: wrap;
+        }
+
+        .skill-list {
+            padding-bottom: 20px;
+        }
+
+
+        .photo-list li {
+            width: 31%;
+            height: 200px;
+            background-color: rgb(243, 233, 90);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .photo-list li:nth-child(even) {
+            background-color: darkseagreen;
+        }
+
+        footer {
+            background-color: black;
+            padding: 10px;
+        }
+
+        footer p {
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .my-photo,
+            .description,
+            .skill {
+                width: 100%;
+            }
+
+            .skill {
+                margin-bottom: 20px;
+            }
+
+            .skill-list,
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .photo-list li {
+                width: 48%;
+            }
+
+            .photo-list li:nth-child(3) {
+                order: 2;
+            }
+
+            .photo-list li:nth-child(4) {
+                order: 1;
+            }
+
+            .photo-list li:nth-child(5) {
+                order: 3;
+            }
+
+            .photo-list li:nth-child(6) {
+                order: 4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <div id="banner"></div>
+    <section id="about">
+        <div class="container">
+            <div class="my-photo">photo</div>
+            <div class="description">description</div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <ul class="skill-list">
+                <li class="skill"></li>
+                <li class="skill"></li>
+                <li class="skill"></li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="photos">
+        <div class="container">
+            <ul class="photo-list">
+                <li>圖片</li>
+                <li>文字</li>
+                <li>圖片</li>
+                <li>文字</li>
+                <li>圖片</li>
+                <li>文字</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p class="copyright">Copyright&copy;2025 kemie</p>
+    </footer>
+</body>
+
+</html>

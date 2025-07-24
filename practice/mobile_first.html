@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 全域 */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            margin: auto;
+            width: 70%;
+            height: 50px;
+            background-color: blue;
+
+
+        }
+
+        @media screen and (min-width: 820px) {
+            /* 平板     */
+
+            .nav {
+                width: 80%;
+                background-color: aquamarine;
+            }
+
+
+
+        }
+
+        @media screen and (min-width: 1024px) {
+            .nav {
+                width: 100%;
+                background-color: rgb(68, 184, 22);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav"></nav>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偽元素</title>
+    <style>
+        h1::before {
+            content: "I am ";
+            display: block;
+            color: aquamarine;
+            background-color: black;
+        }
+
+        h1::after {
+            content: "hello";
+            color: rgb(8, 36, 33);
+            display: block;
+            background-color: cornflowerblue;
+            background-image: url(imgs/star.jpeg);
+        }
+
+        p::first-letter {
+            font-size: 60px;
+        }
+
+        p::selection {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>happy</h1>
+    <p>台電員工搶修電桿遭電擊命危： 丹娜絲颱風過境後，台電人員連日搶修災情，嘉義縣義竹鄉一名李姓員工在維修線路時，不幸遭高壓電擊，目前仍在加護病房搶救中。
+
+        新颱風「薇帕」恐生成： 氣象署預估，新颱風「薇帕」最快將於7月18日生成，外圍環流可能為台灣帶來豐沛水氣。
+
+        漢光演習持續進行： 台灣軍方持續進行年度漢光演習，總統賴清德也親自視導監偵無人機及台美「神箭操演」，加強國土防衛能力。</p>
+</body>
+
+</html>
