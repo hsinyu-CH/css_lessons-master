@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Raleway", sans-serif */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+/* 電腦和平板樣式 */
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+/* header */
+
+.header {
+    height: 50px;
+    padding: 20px 0px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(11, 81, 60);
+    box-shadow: 0 5px 5px 0 #333;
+    background: #fff;
+}
+
+.logo {
+    padding: 20px;
+    width: 120px;
+    height: 100%;
+    background-color: rgb(49, 97, 43);
+    border-radius: 50px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: moccasin;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo a:hover {
+    color: moccasin;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    padding: 10px
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.navbar ul li a:hover {
+    color: #248e95;
+}
+
+/* Banner */
+.Banner {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to right bottom, #3e9046, #53a149, #69b24c, #81c24e, #9ad34f, #a7dc5a, #b5e664, #c2ef6f, #c7f384, #ccf797, #d3fbaa, #daffbc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan h2 {
+    font-size: 4rem;
+    font-weight: 350;
+}
+
+/* About */
+.About .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.main-pic {
+    width: 30%;
+    height: auto;
+}
+
+.main-pic img {
+    max-width: 100%;
+    padding: 20px 0;
+}
+
+.description {
+    width: 40%;
+    padding: 15px;
+}
+
+.description h2 {
+    padding: 10px 0;
+    font-size: 2rem;
+    font-weight: 350;
+}
+
+
+/* .description h3 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    font-weight: 350;
+} */
+
+.description p {
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.education {
+    margin-top: 50px;
+}
+
+.education-list {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.education-list li {
+    padding: 10px;
+    background-color: #ccf797;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.education p {
+    font-weight: 200;
+}
+
+
+/* skills */
+
+.skills-list {
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    height: 50px;
+}
+
+.skills-name {
+    font-weight: 500;
+    display: inline-block;
+}
+
+
+/* work-experience */
+
+.work-experience {
+    margin-top: 50px;
+    background-color: #ccf797;
+}
+
+.work-experience h2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.work-experience-list {
+    list-style: none;
+
+}
+
+.work-experience-list li {
+    display: flex;
+    align-content: baseline;
+    align-items: center;
+    border-bottom: 2px dashed #3e9046;
+    margin: 30px 0;
+    padding-bottom: 20px;
+}
+
+.work-period {
+    width: 150px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 30px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.company-logo img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* portfolio */
+.Portfolio {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Portfolio h2 {
+    width: 100%;
+
+}
+
+
+.Portfolio .container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    height: 500px;
+}
+
+.card:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.card:nth-child(2) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.card:nth-child(3) {
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+.card:nth-child(4) {
+    grid-area: 3 / 2 / 4 / 4;
+}
+
+.card:nth-child(5) {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.card:nth-child(6) {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+.card:nth-child(7) {
+    grid-area: 2 / 4 / 3 / 6;
+}
+
+.card:nth-child(8) {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.card:nth-child(9) {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.card:nth-child(10) {
+    grid-area: 3 / 5 / 4 / 6;
+}
+
+
+.side img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.side {
+    width: 100%;
+    height: 100%;
+}
+
+/* Contant */
+
+.Contact {
+    padding: 100px 0;
+    background-image: linear-gradient(to right bottom, #3e9046, #53a149, #69b24c, #81c24e, #9ad34f, #a7dc5a, #b5e664, #c2ef6f, #c7f384, #ccf797, #d3fbaa, #daffbc);
+}
+
+.Contact p {
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.Contact .container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.col-6 {
+    flex-basis: calc(50% - 15px)
+}
+
+.col-6 h2 {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.info {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 30px 0;
+}
+
+.info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+li i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+form {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #daffbc;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    resize: none;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+
+
+.btn-submit {
+    background: linear-gradient(to right top, #248e95, #00aa99, #00c487, #55da60, #a8eb12);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-submit:hover {
+    background-size: 100% auto;
+    background: linear-gradient(to left bottom, #248e95, #00aa99, #00c487, #55da60, #a8eb12);
+    transition: all 2s ease-in-out;
+    animation: animate-gradient 3s ease-in-out infinite;
+}
+
+
+
+
+/* footer */
+
+footer {
+    background: #333;
+    padding: 20px;
+}
+
+footer p {
+    width: 80%;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Mukta";
+}
+
+/* 手機 */
+@media screen and (max-width: 767px) {
+    .header {
+        height: 100%;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+
+    .menu-icon {
+        display: block;
+        background: #3e9046;
+        padding: 5px;
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 10px;
+    }
+
+    .navbar,
+    .navbar ul,
+    .navbar li,
+    .navbar a {
+        width: 100%;
+    }
+
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid #3e9046;
+    }
+
+    .Banner {
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .slogan {
+        margin: auto 20px;
+    }
+
+    .slogan h2 {
+        font-size: 2rem;
+    }
+
+    .main-pic {
+        width: 100%;
+        height: auto;
+    }
+
+    .About .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .description {
+        margin: auto;
+        width: 100%;
+    }
+
+    .skills-list {
+        padding: 0;
+    }
+
+    .work-experience-list {
+        padding: 0 10px;
+    }
+
+    .work-experience-list li {
+        flex-wrap: wrap;
+    }
+
+    .work-period {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .Portfolio .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .card {
+        width: 45%;
+        height: 180px;
+        max-height: 100%;
+    }
+
+    .Contact {
+        width: ;
+        padding: 0;
+    }
+
+    .col-6 {}
+
+    .Contact h2 {
+        font-size: 2rem;
+    }
+
+    .row {
+
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+
+
+
+}
