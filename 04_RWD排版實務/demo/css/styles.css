@@ -165,14 +165,17 @@ img {
         left: 70%;
         top: -10%;
     }
+
     50% {
         left: 60%;
         top: 0%;
     }
+
     70% {
         left: 60%;
         top: -5%;
     }
+
     100% {
         left: 70%;
         top: -10%;
@@ -184,14 +187,17 @@ img {
         margin-top: 20%;
         margin-left: 40%
     }
+
     50% {
         margin-top: 10%;
         margin-left: 40%
     }
+
     70% {
         margin-top: 15%;
         margin-left: 40%
     }
+
     100% {
         margin-top: 20%;
         margin-left: 40%;
@@ -202,6 +208,7 @@ img {
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(170deg);
     }
@@ -213,21 +220,25 @@ img {
         background: coral;
         transform: rotate(0deg);
     }
+
     25% {
         border-radius: 50% 0 0 0;
         background: darksalmon;
         transform: rotate(45deg);
     }
+
     50% {
         border-radius: 50% 50% 0 0;
         background: indianred;
         transform: rotate(90deg);
     }
+
     75% {
         border-radius: 50% 50% 50% 0;
         background: lightcoral;
         transform: rotate(135deg);
     }
+
     100% {
         border-radius: 50% 50% 50% 50%;
         background: darksalmon;
@@ -446,6 +457,7 @@ h2 {
     from {
         width: 0%;
     }
+
     to {
         width: 90%;
     }
@@ -455,6 +467,7 @@ h2 {
     from {
         width: 0%;
     }
+
     to {
         width: 80%;
     }
@@ -464,6 +477,7 @@ h2 {
     from {
         width: 0%;
     }
+
     to {
         width: 70%;
     }
@@ -473,6 +487,7 @@ h2 {
     from {
         width: 0%;
     }
+
     to {
         width: 60%;
     }
@@ -482,6 +497,7 @@ h2 {
     from {
         width: 0%;
     }
+
     to {
         width: 65%;
     }
@@ -735,9 +751,11 @@ form button[type="submit"] {
     0% {
         background-position: 0 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0 50%;
     }
@@ -786,7 +804,7 @@ footer p {
         z-index: -1;
         animation: move 10s ease-in infinite;
     }
-    
+
     .circle2 {
         position: absolute;
         margin-left: 40%;
@@ -794,26 +812,30 @@ footer p {
         width: 150px;
         height: 150px;
     }
-    
+
     .shape {
         width: 100px;
         height: 100px;
 
     }
-    .slogan{
+
+    .slogan {
         margin: auto 20px;
     }
-    .slogan h2{
+
+    .slogan h2 {
         font-size: 2rem;
     }
+
     .triangle {
         display: none;
     }
-    
+
     .header {
         flex-wrap: wrap;
         align-items: stretch;
     }
+
     .menu-icon {
         display: block;
         background: #8b0f9f;
@@ -824,12 +846,15 @@ footer p {
         justify-content: center;
         align-items: center;
     }
+
     .navbar {
         width: 100%;
     }
+
     .navbar>ul {
         flex-direction: column;
     }
+
     .navbar>ul>li {
         display: block;
         padding: 10px;
@@ -837,42 +862,52 @@ footer p {
         border-bottom: 1px solid #b9b9b9;
         flex: 1 1 0%;
     }
+
     #About .container {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .description{
+
+    .description {
         padding: 30px 0px;
     }
+
     .main-pic {
         width: 100%;
         height: auto;
     }
+
     .description {
         width: 95%;
         margin: auto;
     }
-    .work-experience-list li{
+
+    .work-experience-list li {
         flex-wrap: wrap;
     }
-    .work-period{
+
+    .work-period {
         width: 100%;
         margin-bottom: 10px;
     }
+
     #Portfolio .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .skill-name{
+
+    .skill-name {
         width: 120px;
         margin-right: 5px;
     }
+
     .card {
         width: 48%;
         height: 200px;
         max-height: 100%;
     }
+
     .card:nth-child(6) {
         height: auto;
     }
