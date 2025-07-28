@@ -30,7 +30,7 @@ body {
 
 .header {
     height: 50px;
-    padding: 20px 0px;
+    padding: 20px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -255,7 +255,6 @@ body {
 
 
 .Portfolio .container {
-    width: 80%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -337,7 +336,6 @@ label {
 }
 
 .Contact .container {
-    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -349,12 +347,7 @@ label {
 }
 
 
-
-.col-6 {
-    flex-basis: calc(50% - 15px)
-}
-
-.col-6 h2 {
+.col h2 {
     padding: 10px 0;
     font-weight: 500;
     font-size: 3rem;
@@ -444,7 +437,13 @@ footer p {
 
 /* 手機 */
 @media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 85%;
+    }
+
     .header {
+        padding: 0;
         height: 100%;
         flex-wrap: wrap;
         align-items: stretch;
@@ -542,11 +541,10 @@ footer p {
     }
 
     .Contact {
-        width: ;
+
         padding: 0;
     }
 
-    .col-6 {}
 
     .Contact h2 {
         font-size: 2rem;
